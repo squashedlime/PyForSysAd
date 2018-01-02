@@ -5,7 +5,6 @@ from optparse import OptionParser
 """
 A monitoring script that compares the reports in reports_list.txt with the actual reports in /opt/report_generator/done_ftp/
 use -v for verbose information and -d for DWH
-martinh.holloway@amayagaming.com
 
 """
 class ReportGenerator(object):
@@ -116,7 +115,7 @@ class ReportGenerator(object):
 
 
                 else:
-                        numberOfExpectedreports = (int(self.reportNumber["#CIEGaming_NJ_AmayaGaming.zip:"]) + int(self.reportNumber["#Reconciliation_NJ_AmayaGaming.zip:"]) + int(self.reportNumber["#KPI_NJ_AmayaGaming.zip:"])-1)
+                        numberOfExpectedreports = (int(self.reportNumber["#REPORT1.zip:"]) + int(self.reportNumber["#REPORT2.zip:"]) + int(self.reportNumber["#REPORT3.zip:"])-1)
                         if self.debug:
                                 print "\nNumber of expected reports:" + str(numberOfExpectedreports)
                                 print "Number of actual reports:" + str(self.numberOfActualFiles)

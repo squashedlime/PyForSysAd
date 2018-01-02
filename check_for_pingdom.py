@@ -45,7 +45,7 @@ def main():
 	checkID = []
 	
 	#Connection info
-	connect = pingdom.PingdomConnection('ITOGMonitoring-stockholm@ongame.com', 'Ong4m3', 'x9sgb8aw0mbb5uilphc41xxt9rmjl00u')
+	connect = pingdom.PingdomConnection('EMAIL, 'USERNAME', 'PASSWORD')
 
 	#Set env
 	env = opts.env
